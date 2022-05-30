@@ -1,0 +1,51 @@
+{
+  "id": "3361812",
+  "name": "qiu-er-im",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "6260272",
+      "name": "表情",
+      "font_class": "biaoqing",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "27876667",
+      "name": "语音",
+      "font_class": "yuyin",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "25975612",
+      "name": "收到的树洞",
+      "font_class": "shoudaodeshudong",
+      "unicode": "e6bd",
+      "unicode_decimal": 59069
+    },
+    {
+      "icon_id": "415291",
+      "name": "friends",
+      "font_class": "friends",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "2127177",
+      "name": "我的",
+      "font_class": "wode",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "1268875",
+      "name": "聊天",
+      "font_class": "liaotian",
+      "unicode": "e6fc",
+      "unicode_decimal": 59132
+    }
+  ]
+}
