@@ -1,5 +1,6 @@
 <template>
   <header-bar></header-bar>
+  <nut-cell title="新的朋友" icon="my" is-link style="text-align:left" url="/friend/apply"></nut-cell>
   <ul class="infiniteUl" id="scroll" style="height: 300px">
     <nut-infiniteloading
       containerId="scroll"

@@ -5,6 +5,7 @@ const routes = [
   { path: '/', name: 'chat', component: () => import('../pages/chat/chat.vue'), meta: { isLogin: true } },
   { path: '/chat/to-chat', name: 'go-to-chat', component: () => import('../pages/chat/to-chat.vue'), meta: { isLogin: true } },
   { path: '/friend', name: 'friend', component: () => import('../pages/friend/friend-list.vue'), meta: { isLogin: true } },
+  { path: '/friend/apply', name: 'friend-apply', component: () => import('../pages/friend/friend-apply.vue'), meta: { isLogin: true } },
   { path: '/my', name: 'my', component: () => import('../pages/my/my.vue'), meta: { isLogin: true } },
   { path: '/hole', name: 'hole', component: () => import('../pages/tree/hole.vue'), meta: { isLogin: true } },
 ]
@@ -18,6 +19,7 @@ function RouterStack(router: Router) {
   // const stack = [];
   var loginInfo = localStorage.getItem("userInfo"),
     userInfo = JSON.parse(loginInfo)
+    //获取用户信息有bug需要处理
   router.afterEach((to, from) => {
     if (to.meta.isLogin) {
       if (userInfo == null) {

@@ -5,11 +5,17 @@
 <script setup>
 import { onMounted, reactive } from "vue";
 import SocketService from "./http/websocket";
+import { useMain } from "./store"; // 引入store
 name: "App";
+//用户信息
+let useStoreMain = useMain();
 const data = reactive({
   socketServe: SocketService.Instance,
 });
-SocketService.Instance.connect();
+//判断登录才连接websocket
+console.log(useStoreMain.user)
+if (useStoreMain.user != null) {
+  SocketService.Instance.connect();
 //握手 心跳
 data.socketServe = SocketService.Instance;
 data.socketServe.registerCallBack("callback1", data.socketServe);
@@ -26,6 +32,8 @@ let hertCheckMsg = {
     }
   }
 // data.socketServe.heartCheck(hertCheckMsg)
+}
+
 onMounted(() => {
 });
 </script>

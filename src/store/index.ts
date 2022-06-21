@@ -8,7 +8,7 @@ export const useMain = defineStore('loginUserInfo', {
   */
   state: () => {
       var userInfo = JSON.parse(<string>localStorage.getItem("userInfo"))
-      if (userInfo.avatar == '') {
+      if (userInfo != null && userInfo.avatar == '') {
         userInfo.avatar = 'https://cdn.learnku.com//uploads/communities/sNljssWWQoW6J88O9G37.png!/both/44x44'
       }
     return {
